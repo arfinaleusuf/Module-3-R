@@ -1,17 +1,23 @@
+
 import './App.css'
-import ControlledDemo from './components/ControlledDemo'
-import SignUP from './components/SignUP'
-import UncontrolledDemo from './components/UncontrolledDemo'
+import AuthProvider from './context/AuthProvider';
+import Layout from './Layout';
+// import ControlledDemo from './components/ControlledDemo'
+// import SignUP from './components/SignUP'
+// import UncontrolledDemo from './components/UncontrolledDemo'
 
 
 function App() {
-
 
   return (
     <div>
       {/* <UncontrolledDemo /> */}
       {/* <ControlledDemo/> */}
-      <SignUP/>
+      {/* <SignUP/> */}
+      <AuthProvider>
+        <Layout />
+      </AuthProvider>
+
     </div>
   )
 }
